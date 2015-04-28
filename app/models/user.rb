@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	has_many :ribbits
 	has_secure_password
 
 	before_save :create_avatar_url
